@@ -1,0 +1,239 @@
+body, html {
+    margin:0;
+    padding:0;
+}
+
+.covered-by-your-grace-regular {
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.nav-bar {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 6vh;
+    padding: 1vh 2vw;
+    border-bottom: 1px solid black;
+}
+    .nav-bar div {
+        margin-inline: 0.8vw;
+    }
+
+    .nav-bar__right-block {
+        display: flex;
+    }
+    
+    #nav-bar__name {
+        margin-inline: 2rem auto;
+    }
+@media (max-width: 48em) {
+    .nav-bar {
+        margin-block: 1.5vh 2vw;
+        font-size: 1.125rem;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    #nav-bar__name {
+        margin: 0.5vh 0;
+    }
+}
+
+@media (max-width: 30em) {
+    .nav-bar {
+        font-size: 1rem;
+    }
+}
+
+.developer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+    width: 100%;
+    padding-block: 4vh 10vh;
+}
+    .developer__title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .developer__subtitle {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+@media (max-width: 48em) {
+    .developer {
+        min-height: 20vh;
+    }
+    .developer__title {
+        font-size: 2.5rem;
+        margin-block: 1vh;
+    }
+    .developer__subtitle {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 30em) {
+    .developer__title {
+        font-size: 1.625rem;
+    }
+    .developer__subtitle {
+        font-size: 1rem;
+    }
+}
+
+.hor-bar {
+    height: 0px;
+    border: none;
+    border-top: 0.2rem solid black;
+    margin: 0%;
+}
+
+.info {
+    font-size: 1.5rem;
+}
+    .info__body {
+        display: flex;
+        flex-direction: row;
+        min-height: 80vh;
+    }
+        .title {
+            font-size: 1.33em;
+            margin: 4vh 2.5vw 4vh;
+        }
+        .info__project {
+            width: 30vw;
+            border-right: 0.2rem solid black;
+        }
+        .info__experience {
+            width: 40vw;
+            border-right: 0.2rem solid black;
+        }
+        .info__education {
+            width: 30vw;
+        }
+            .courses-list {
+                margin-block: 2vh;
+                padding-left: 1.5vw;
+            }
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+        .list__item {
+            padding: 2vh 0vw 2vh 2.5vw;
+            border-bottom: 0.2rem solid black;
+        }
+        .list__item:last-child {
+            border-bottom: none;
+        }
+
+@media (max-width: 48em) {
+    .info {
+        font-size: 1.5rem;
+    }
+        .info__body {
+            display: block;
+        }
+            .title {
+                text-align: center;
+            }
+            .info__project {
+                width: 100%;
+            }
+            .info__experience {
+                width: 100%;
+            }
+            .info__education {
+                width: 100%;
+            }
+                .courses-list {
+                    text-align: left;
+                    padding-left: 3vw;
+                }
+        
+        .list--left div {
+            text-align: left;
+        }
+        .list__item {
+            text-align: center;
+        }
+}
+
+@media (max-width: 32em) {
+    .info {
+        font-size: 1.2rem;
+    }
+}
+
+.review {
+    font-size: 1.5rem;
+}
+    .review__body {
+        min-height: 80vh;
+    }
+    .review__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+        .review__item {
+            width: 250px;
+            padding-inline: 2.5vw;
+            margin: 2vh 2vw;
+            font-size: 1.2em;
+            border: 0.2rem solid black;
+            border-radius: 45px;
+        }
+        .review__text {
+            margin-block: 6vh 0;   
+        }
+
+        .review__creds {
+            color: rgb(255, 167, 52);
+            margin-block: 3vh 6vh;
+        }
+
+@media (max-width: 48em) {
+    .review {
+        font-size: 1.2rem;
+    }
+    .review__body {
+        min-height: none;
+    }
+    .review__list {
+        flex-direction: column;
+        align-items: center;
+    }
+        .review__item {
+            width: 80vw;
+        }
+}
+
+@media (max-width: 30em) {
+    .review {
+        font-size: 1rem;
+    }
+}
+
+.rights-reserved {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width: 48em) {
+    .rights-reserved {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 30em) {
+    .rights-reserved {
+        font-size: 1rem;
+    }
+}
+
+
