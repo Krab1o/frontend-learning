@@ -1,0 +1,185 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials__body {
+    width: 1024px;
+    margin-inline: auto;
+    margin-block: 4vh;
+}
+
+    .testimonials__row {
+        display: flex;
+        margin-bottom: 5vh;
+    }
+
+        .testimonial__item:last-child {
+            margin-inline: auto 0;
+        }
+
+        .testimonial__item--1-left {
+            margin-right: 2vw;
+        }
+
+        .testimonial__item--1-right {
+            
+        }
+
+            .bubble {
+                position: relative;
+                font-size: 1.5em;
+                padding: 20px;
+                border: 2px solid black;
+                border-radius: 25px;
+            }
+                .bubble--1-left {
+                    max-width: 400px;
+                    background-color: black;
+                    color: white;
+                }
+                    .bubble--1-left:before {
+                        content: "";
+                        width: 0px;
+                        height: 0px;
+                        border-top: 20px solid black;
+                        border-left: 20px solid transparent;
+                        border-right: 20px solid transparent;
+                        position: absolute;
+                        bottom: -22px;
+                        left: 30px;
+                    }
+                .bubble--1-right {
+                    max-width: 400px;
+                }
+
+        .testimonial__item--2-left {
+            display: flex;
+        }
+
+            .avatar--2-left {
+                height: 400px;
+                width: 400px;
+                min-height: 400px;
+                min-width: 400px;
+                background-color: red;
+                border-radius: 25px;
+                margin-right: 2vw;
+            }
+            
+            .bubble--2-right {
+                /* max-width: 394px; */
+                padding: 40px;
+                border-radius: 25px;
+                background-color: black;
+                color: white
+            }
+                .stars {
+                    display: flex;
+                    margin: 0 0 1em 0;
+                }
+                    .star {
+                        width: 36px;  
+                        aspect-ratio: 1;
+                        background: #F8CA00;
+                        clip-path: polygon(50% 0,
+                        calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+                        calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+                        calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+                        calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+                        ); 
+                        /* or more simple
+                        clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+                        */
+                    }
+            
+        .bubble--3-full {
+            padding: 50px 100px;
+            text-align: center;
+        }
+
+        .avatar-line {
+            display: flex;
+            justify-content: center;
+            margin-block: 5vh 1vh;
+        }
+
+        .avatar {
+            min-height: 80px;
+            min-width: 80px;
+            height: 80px;
+            width: 80px;
+            background-color: red;
+            border-radius: 50%;
+            margin-inline: 15px 15px;
+        }
+            .avatar--faded {
+                opacity: 0.3;
+            }
+        
+        .arrow-left {
+            height: 0;
+            width: 0;
+            position: relative;
+        }
+
+        .arrow-left:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            margin-right: 3px;
+            border: 1px solid rgb(170, 170, 170);
+            border-width: 0 0 3px 3px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            top: 30px;
+            right: 10px;
+        }
+
+        .arrow-right {
+            height: 0;
+            width: 0;
+            position: relative;
+        }
+
+        .arrow-right:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            margin-right: 3px;
+            border: 1px solid rgb(170, 170, 170);
+            border-width: 0 0 3px 3px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(-135deg);
+            top: 30px;
+        }
+
+        .creds {
+            margin-block: 5vh 0;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+        }
+            
+
+            .creds__name-container--row-2 {
+                margin: 0 0 3vh 0;
+            }
+                
+            .author {
+                font-size: 1.5em;
+            }
+                .author--row-2 {
+                    font-size: 1.5em;
+                    margin-bottom: 1vh;
+                }
+            .job-title {
+                font-size: 1em;
+            }
+                .job-title--row-2 {
+                    font-size: 0.9em;
+                    color: grey;
+                    opacity: 0.7;
+                }
