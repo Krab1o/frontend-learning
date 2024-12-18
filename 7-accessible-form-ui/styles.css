@@ -1,0 +1,138 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.form-body {
+    width: 864px;
+    margin: auto;
+}
+
+@media (max-width: 54em) {
+    .form-body {
+        width: 100%;
+    }
+}
+
+.form-container {
+    margin-block: 10vh;
+    display: flex;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px 50px;
+}
+
+@media (max-width: 54em) {
+    .form-container {
+        justify-content: center;
+        border: none;
+    }
+}
+
+@media (max-width: 35em) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-container__forms {
+        text-align: center;
+    }
+    .form__input {
+        width: 200px;
+    }
+}
+
+.form-container__forms {
+    margin-right: 5%;
+}
+
+    .form__text {
+        margin-block: 1vh;
+    }
+
+    .form__input-holder {
+        position: relative;
+    }
+
+    #togglePassword {
+        position: absolute;
+        right: 6px;
+        top: 3px;
+    }
+
+    .form__input {
+        font-size: inherit;
+        height: 30px;
+        width: 250px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-bottom: 1vh;
+        padding: 3px 0 3px 6px;
+    }
+        #emailForm {
+            margin-bottom: 6vh;
+        }
+
+    .btn {
+        margin: 14px 10px;
+        background-color: black;
+        color: white;
+        padding-block: 10px;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        background-color: grey;
+        border: 1px solid black;
+    }
+
+.form-container__completeness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.completeness-circle {
+    margin-block: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.completeness-text {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.completeness-steps {
+    font-size: 1rem;
+    border: 1px solid transparent;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-style: italic;
+}
+
+    .completeness-steps__step {
+        margin-block: 5px;
+    }
+
+    .completeness-circle__text {
+        font-weight: 600;
+    }
+
+    .step-done {
+        text-decoration: line-through;
+    }
+
+        
+
