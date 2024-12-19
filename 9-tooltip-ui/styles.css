@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: rgb(95, 16, 141);
+    color: white;
+    font-size: 1.6em;
+}
+
+.nav-bar__item img {
+    max-height: 48px;
+    max-width: 48px;
+}
+
+.nav-bar__item {
+    margin-inline: 1vw;
+}
+
+.nav-bar__item:first-child {
+    width: 48px;
+    height: 48px;
+    margin-left: 3vw;
+}
+
+.nav-bar__item:nth-child(2) {
+    position: relative;
+    margin-inline: 39vw auto;
+}
+
+.nav-bar__item:nth-child(3) {
+    position: relative;
+}
+
+    .name-hover {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: -4vw;
+    }
+
+    @keyframes hover-appearance {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+        .bubble {
+            text-align: center;
+            width: 10vw;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            animation-name: hover-appearance;
+            animation-duration: 0.6s;
+        }
+
+        .bubble:after {
+            position: absolute;
+            top: -14px;
+            right: 5.2vw;
+            content: "";
+            height: 0px;
+            width: 0px;
+            border-bottom: 15px solid black;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+        }
+
+    .nav-bar__item:nth-child(2):hover {
+        .name-hover {
+            display: inline;
+            
+        }
+    }
+    
+    .nav-bar__item:nth-child(3):hover {
+        .name-hover {
+            display: inline;
+        }
+    }
+
+
+.nav-bar__item:last-child {
+    margin-right: 3vw
+}
