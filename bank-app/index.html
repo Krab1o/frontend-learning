@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Cashflow</title>
+</head>
+<body>
+    <div class="cash">
+        <div class="cash__body">
+            <div class="block">
+                <div class="block__info">
+                    <div class="title">Income</div>
+                    <ul class="money-block__list"></ul>
+                </div>
+                <div class="block__form">
+                    <form id="incomeForm" type="submit">
+                        <input class="input" id="incomeInput" placeholder="Enter your income"></input>
+                        <button class="btn">Add</button>
+                    </form>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block__info">
+                    <div class="title">Expenses</div>
+                    <ul class="money-block__list"></ul>
+                </div>
+                <div class="block__form">
+                    <form id="expenseForm" type="submit">
+                        <input class="input" id="expenseInput" placeholder="Enter your expense"></input>
+                        <button class="btn">Add</button>
+                    </form>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total__title">Total:</div>
+                <div class="total__balance" id="balance">0$</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
