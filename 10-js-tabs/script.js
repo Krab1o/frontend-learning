@@ -1,24 +1,15 @@
 "use strict";
 
-/*
-    let message;
+const rowElements = document.getElementsByClassName("row__tab");
+let currentActive = rowElements[0];
+let toChange = document.getElementsByClassName("content__changed")[0];
+[...rowElements].map(el => {
+  el.addEventListener("click", () => {
+    toChange.textContent = "Content " + el.textContent;
+    currentActive.className = "row__tab";
+    el.className  = "row__tab row__tab--active"
+    currentActive = el;
+  })
+})
 
-if (login == 'Employee') {
-  message = 'Hello';
-} else if (login == 'Director') {
-  message = 'Greetings';
-} else if (login == '') {
-  message = 'No login';
-} else {
-  message = '';
-}
-*/
-
-let number = 0
-
-while (number <= 100) {
-    number = prompt("Enter number greater than 100")
-}
-
-alert(number)
-
+currentActive.click();

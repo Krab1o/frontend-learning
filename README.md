@@ -11,4 +11,4 @@ Solutions for frontend projects on [roadmap.sh frontend projects](https://roadma
 - [x] [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
 - [ ] Image Grid Layout
 - [x] [Tooltip UI](https://roadmap.sh/projects/tooltip-ui)
-- [ ] Simple Tabs
+- [x] [Simple Tabs](https://roadmap.sh/projects/simple-tabs)
